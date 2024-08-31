@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FED2975-1503-46DB-B8E3-D765714E1968}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Soul_and_Basil_Project</RootNamespace>
+    <AssemblyName>Soul and Basil Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.2.2.1\lib\net472\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Asio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Asio.2.2.1\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Core.2.2.1\lib\netstandard2.0\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Midi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Midi.2.2.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Wasapi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Wasapi.2.2.1\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinForms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.WinForms.2.2.1\lib\net472\NAudio.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.WinMM.2.2.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfterPrayingAzqar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfterPrayingAzqar.Designer.cs">
+      <DependentUpon>FrmAfterPrayingAzqar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfterSleepingazqar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfterSleepingazqar.Designer.cs">
+      <DependentUpon>FrmAfterSleepingazqar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEveningAzqar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEveningAzqar.Designer.cs">
+      <DependentUpon>FrmEveningAzqar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMorningAzqar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMorningAzqar.Designer.cs">
+      <DependentUpon>FrmMorningAzqar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrayTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrayTime.Designer.cs">
+      <DependentUpon>FrmPrayTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuran.Designer.cs">
+      <DependentUpon>FrmQuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTasbeeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTasbeeh.Designer.cs">
+      <DependentUpon>FrmTasbeeh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmAzqar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAzqar.Designer.cs">
+      <DependentUpon>FrmAzqar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSleepingAzqar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSleepingAzqar.Designer.cs">
+      <DependentUpon>FrmSleepingAzqar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfterPrayingAzqar.resx">
+      <DependentUpon>FrmAfterPrayingAzqar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfterSleepingazqar.resx">
+      <DependentUpon>FrmAfterSleepingazqar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEveningAzqar.resx">
+      <DependentUpon>FrmEveningAzqar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMorningAzqar.resx">
+      <DependentUpon>FrmMorningAzqar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrayTime.resx">
+      <DependentUpon>FrmPrayTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuran.resx">
+      <DependentUpon>FrmQuran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSleepingAzqar.resx">
+      <DependentUpon>FrmSleepingAzqar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTasbeeh.resx">
+      <DependentUpon>FrmTasbeeh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FrmAzqar.resx">
+      <DependentUpon>FrmAzqar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-08-06_20-47-08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-08-06_20-47-081.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadan-masjid-islamic-shikh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadan-masjid-islamic-shikh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadan-masjid-islamic-shikh2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islamic-icon-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islamic-icon-81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-08-06_20-47-082.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-08-06_20-47-083.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-08-06_20-47-084.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_GktcH7VBZQK30o5G.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_GktcH7VBZQK30o5G1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hqdefault1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mecca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15-156834_s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadan-masjid-islamic-shikh3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadan-masjid-islamic-shikh4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pray-muslim-sheikh-zayed-grand-mosque-mosque-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mosque-in-abu-dhabi-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_GktcH7VBZQK30o5G2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ai-generated-ramadan-wallpaper-islamic-mosque-free-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47e10e326c657daeec343279496e128c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_643202332_ip2ZDZvmPj3d1CDzve08G9hC6ZSHXxR7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11175472.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6903616.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4676959.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-video-button-icon-vector-23205383.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\خلفيات-اسلامية-للكمبيوتر-39-scaled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\خلفيات-اسلامية-للكمبيوتر-39-scaled1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\حملها-من-هُنا-اجمل-خلفيات-4k-للكمبيوتر-1920x1080-اسلامية-بجودة-عالية213-630x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\خلفيات-اسلامية-بجودة-عالية2-scaled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\خلفيات-اسلامية-بجودة-عالية2-scaled1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnificent-mosque-illuminated-by-moonlight-during-full-moon-ai-generated-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\خلفيات-اسلامية-للكمبيوتر-39-scaled2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1114313.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11143131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1114313 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\خلفيات-اسلامية-بجودة-عالية2-scaled2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islamic-xptqk5xw6adpezzv.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
